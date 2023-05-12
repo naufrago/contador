@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { TituloComponent } from './componentes/titulo/titulo.component';
 import { SumarComponent } from './componentes/sumar/sumar.component';
 import { RestarComponent } from './componentes/restar/restar.component';
+import { CalculadoraComponent } from './componentes/calculadora/calculadora.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -12,11 +15,13 @@ import { RestarComponent } from './componentes/restar/restar.component';
     AppComponent,
     TituloComponent,
     SumarComponent,
-    RestarComponent
+    RestarComponent,
+    CalculadoraComponent
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
